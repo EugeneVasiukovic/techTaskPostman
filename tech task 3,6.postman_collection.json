@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "0d4791ae-db33-4757-af59-983499ab330b",
+		"name": "tech task 3,6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21444883"
+	},
+	"item": [
+		{
+			"name": "end point 6 / user_info_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "27",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Evgeniy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/user_info_4",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user_info_4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "end point 3/ object_info_3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/object_info_3?age=27&salary=1000&name=name",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "27"
+						},
+						{
+							"key": "salary",
+							"value": "1000"
+						},
+						{
+							"key": "name",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
